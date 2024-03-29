@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <!-- Déclaration du type de document -->
+    <!-- Balise racine de la page HTML avec indication de la langue francais -->
+    <meta charset="UTF-8" />
+    <!--titre de la page-->
+    <meta name="key words" content="Quiz"/>
+    <meta name="author" content="ben othmen imen"/>
+    <title>QuizMaster</title>
+    <!-- Importation d'une feuille de style externe -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Conteneur pour le bouton de démarrage et le texte d'introduction -->
+    <div class="start-btn-container">
+      <h2>testez vos connaissances</h2>
+      <p>Énigmes et Casse-Tête: Testez Votre Réflexion</p>
+      <button class="start-btn">commencer le quiz</button>
+    </div>
+    <!-- Conteneur pour le quiz -->
+    <div class="quiz-container">
+      <!-- Titre du quiz -->
+      <h1>bonne chance</h1>
+      <!-- Placeholder pour afficher le temps restant -->
+      <div class="timer">Temps restant : 10 secondes</div>
+      <!-- Placeholder pour afficher la question -->
+      <h2 class="question"></h2>
+      <!-- Placeholder pour afficher les options de réponse -->
+      <div class="options"></div>
+      <!-- Bouton pour passer à la question suivante -->
+      <button class="next-btn">next</button>
+    </div>
+     <!-- Conteneur pour afficher les résultats du quiz -->
+    <div class="quiz-result"></div>
+    <!-- Liaison vers un fichier JavaScript externe --> 
+    <script src="main.js"></script>
+  </body>
+</html>

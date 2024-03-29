@@ -1,0 +1,139 @@
+/* Styles pour le conteneur du quiz */ 
+.quiz-container {
+    font-family: "Roboto", sans-serif;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 16px;
+    display: none;
+  }
+  /* Styles pour le minuteur à l'intérieur du conteneur du quiz */
+  .quiz-container .timer {
+    font-weight: bold;
+    text-align: right;
+  }
+  /* Styles pour le minuteur lorsqu'il est dans un état "danger" (temps écoulé) */
+  .timer.danger {
+    color: red;
+  }
+  /* Style pour les questions du quiz */
+  .quiz-container h2.question {
+    font-size: 20px;
+    background: #d0ecff;
+    padding: 16px;
+    border-radius: 8px;
+    font-weight: normal;
+    line-height: 1.6;
+  }
+  /* Style pour les options de réponse du quiz */
+  .quiz-container .options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 20px;
+  }
+  /* Style pour chaque option de réponse */
+  .quiz-container .option {
+    border: none;
+    padding: 24px 32px;
+    font-size: 18px;
+    background: #1d3557;
+    color: #fff;
+  }
+  /* Style pour le bouton dans le quiz */
+
+  .quiz-container button {
+    cursor: pointer;
+  }
+  /* Style pour les éléments désactivés */
+  .disabled {
+    pointer-events: none;
+  }
+  /* Style pour l'option de réponse correcte */
+  .option.correct {
+    background: #51e351;
+    color: #222;
+  }
+  /* Style pour l'option de réponse incorrecte */
+  .option.incorrect {
+    background: #e63946;
+  }
+  /* Style pour le bouton "Next" dans le quiz et le bouton "Retake" dans les résultats */
+  .quiz-container .next-btn,
+  .quiz-result .retake-btn {
+    background: #222;
+    color: #fff;
+    border: none;
+    padding: 12px 32px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 3px;
+    cursor: pointer;
+    width: fit-content;
+  }
+  /* Style pour la section de résultats du quiz */
+  .quiz-result {
+    display: none;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 900px;
+    margin: 0 auto;
+    font-family: "Roboto", sans-serif;
+    padding: 16px;
+  }
+  /* Style pour le conteneur de question dans les résultats du quiz */
+  .quiz-result .question-container {
+    padding: 12px;
+    border: 1px solid #eee;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  /* Style pour le conteneur de question dans les résultats du quiz lorsqu'une réponse est incorrecte */
+  .quiz-result .question-container.incorrect {
+    background: #e63946;
+    color: #fff;
+  }
+  /* Style pour le numéro de question */
+  .question-number {
+    font-size: 16px;
+    margin-right: 16px;
+    background: #1d3557;
+    color: #fff;
+    padding: 8px;
+    border-radius: 8px;
+  }
+  /* Media query pour les écrans avec une largeur maximale de 700px */
+  @media (max-width: 700px) {
+    .quiz-container .options {
+      grid-template-columns: 1fr;
+    }
+  }
+  /* Style pour le conteneur du bouton de démarrage */
+  .start-btn-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /* Style pour le titre (h2) dans le conteneur de bouton de démarrage */
+  .start-btn-container h2 {
+    font-size: 40px;
+    margin: 0;
+  }
+  /* Style pour le bouton de démarrage dans le conteneur de démarrage */
+  .start-btn-container .start-btn {
+    background: #e63946;
+    color: #fff;
+    padding: 8px 32px;
+    border-radius: 8px;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
